@@ -1,0 +1,19 @@
+{
+  "name": "ptch",
+  "version": "1.0.1",
+  "description": "an open sourced logging discord bot hosted on an ubuntu server",
+  "license": "MIT",
+  "main": "src/main/js/ptch/discord/bot.js",
+  "scripts": {
+    "restart": "pm2 restart src/main/js/ptch/discord/bot.js",
+    "start": "pm2 start src/main/js/ptch/discord/bot.js",
+    "stop": "pm2 stop src/main/js/ptch/discord/bot.js",
+    "lint": "eslint \"./**/*.js\""
+  },
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
