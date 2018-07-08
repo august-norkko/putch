@@ -1,5 +1,5 @@
 const conf = require('../conf');
-const link = require('./scripts/url');
+const link = require('./url');
 
 module.exports = (client, message) => {
 	if (message.content.indexOf('!') !== 0) return;
