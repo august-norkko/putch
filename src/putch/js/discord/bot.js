@@ -1,5 +1,6 @@
 (function() {
 	const logging = require('./scripts/log');
+	const command = require('./scripts/commands');
 	const token = require('./conf').token;
 
 	const Discord = require('discord.js');
@@ -13,6 +14,7 @@
 	client.on('message', message => {
 		if (message.author.bot) return;
 		logging(message);
+		command(client, message);
 	});
 
 	client.login(token);
