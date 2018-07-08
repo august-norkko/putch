@@ -1,5 +1,5 @@
 (function() {
-	const logging = require('./scripts');
+	const logging = require('./scripts/log');
 	const token = require('./conf').token;
 
 	const Discord = require('discord.js');
